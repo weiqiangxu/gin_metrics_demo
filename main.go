@@ -29,7 +29,7 @@ func main() {
 		_, _ = writer.Write([]byte("hello world"))
 	})
 	http.Handle("/metrics", promhttp.Handler())
-	err := http.ListenAndServe("127.0.0.1:8989", nil)
+	err := http.ListenAndServe("127.0.0.1:6969", nil)
 	if err != nil {
 		panic(err)
 	}
